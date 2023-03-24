@@ -1,0 +1,17 @@
+﻿using Dk.Entities.Concrete;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Dk.Business.Abstract
+{
+    public interface IProductService
+    {
+        List<Product> GetAll();
+        List<Product> UrunArama(string productName);
+
+        void Add(Product product);
+    }
+}
